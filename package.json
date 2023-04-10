@@ -5,13 +5,20 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch:sass": " sass src/scss/main.scss dist/css/style.css --watch",
-    "live": "live-server"
+    "watch:sass": " sass src/scss/main.scss dist/css/style.css --watch --no-source-map",
+    "live": "live-server",
+    "watch:style": "",
+    "babel-watch": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/musagenius345/portfolio.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    
     "@babel/cli": "^7.21.0",
     "@babel/core": "^7.21.4",
     "sass": "^1.61.0",
