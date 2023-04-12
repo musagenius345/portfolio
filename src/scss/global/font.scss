@@ -1,22 +1,21 @@
-@use 'variables' as *;
+@use "variables" as *;
 
 @font-face {
-  font-family: 'Lato';
-  src: '../../assets/fonts/Lato-Regular.ttf';
+  font-family: "Lato";
+  src: "../../assets/fonts/Lato-Regular.woff2";
 }
 
 @font-face {
-  font-family: 'Monte';
-  src: 'assets/fonts/Montserrat-Regular.ttf';
+  font-family: "Monte";
+  src: "assets/fonts/Montserrat-Regular.woff2";
 }
-
 
 @font-face {
-  font-family: 'PlayFair';
-  src: '../../assets/fonts/PlayfairDisplay-Regular.ttf';
+  font-family: "PlayFair";
+  src: "../../assets/fonts/PlayfairDisplay-Regular.woff2";
 }
 
-h1, h2{
-  font-family: 'Lato', sans-serif;
-  
+h1,
+h2 {
+  font-family: "Lato", sans-serif;
 }

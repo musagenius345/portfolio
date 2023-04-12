@@ -4,24 +4,90 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "watch:sass": " sass src/scss/main.scss dist/css/style.css --watch --no-source-map",
-    "live": "live-server",
-    "watch:style": "",
-    "babel-watch": ""
+    "start": "concurrently \"npm:watch-*\" ",
+    "watch-sass": "sass src/scss/main.scss dist/css/style.css -w  --no-source-map",
+    "watch-live": "live-server",
+    "js-eslint": "eslint src/js/*.js --fix",
+    "css-stylelint": "stylelint src/scss/*.scss",
+    "watch-prettier": "onchange \"**/*\" -- prettier --write --ignore-unknown {{changed}}",
+    "postcss": "postcss dist/css/style.css -o dist/css/main.css"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/musagenius345/portfolio.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Musa Blackfrost",
   "license": "ISC",
   "devDependencies": {
-    
     "@babel/cli": "^7.21.0",
     "@babel/core": "^7.21.4",
+    "@babel/plugin-transform-runtime": "^7.21.4",
+    "@babel/polyfill": "^7.12.1",
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.21",
     "sass": "^1.61.0",
     "sass-loader": "^13.2.2"
+  },
+  "stylelint": {
+    "extends": "stylelint-config-standard",
+    "plugins": [
+      "stylelint-order",
+      "stylelint-scss"
+    ],
+    "rules": {
+      "at-rule-no-unknown": [
+        true,
+        {
+          "ignoreAtRules": [
+            "extend",
+            "at-root",
+            "debug",
+            "warn",
+            "error",
+            "if",
+            "else",
+            "for",
+            "each",
+            "while",
+            "mixin",
+            "include",
+            "content",
+            "function",
+            "return",
+            "tailwind",
+            "apply",
+            "layer",
+            "use",
+            "forward",
+            "responsive",
+            "variants",
+            "screen"
+          ]
+        }
+      ],
+      "no-descending-specificity": null,
+      "order/order": [
+        "dollar-variables",
+        "custom-properties",
+        "at-rules",
+        "declarations",
+        {
+          "type": "at-rule",
+          "name": "supports"
+        },
+        {
+          "type": "at-rule",
+          "name": "media"
+        },
+        {
+          "type": "at-rule",
+          "name": "include"
+        },
+        "rules"
+      ],
+      "order/properties-order": [],
+      "scss/at-rule-no-unknown": true
+    }
   }
 }

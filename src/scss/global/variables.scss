@@ -1,19 +1,18 @@
-:root{
+:root {
   /*colors*/
-  --bg-primary: #F4EEE0;
-  --clr-accent: #6D5D6E;
+  --bg-primary: #f4eee0;
+  --clr-accent: #6d5d6e;
   --clr-dark: #393646;
-  --clr-light: #4F4557;
-  
-  
+  --clr-light: #4f4557;
+
   /* typography*/
-  --step--2: clamp(0.78rem, calc(0.78rem + 0.03vw), 0.80rem);
-  --step--1: clamp(0.94rem, calc(0.92rem + 0.09vw), 1.00rem);
+  --step--2: clamp(0.78rem, calc(0.78rem + 0.03vw), 0.8rem);
+  --step--1: clamp(0.94rem, calc(0.92rem + 0.09vw), 1rem);
   --step-0: clamp(1.13rem, calc(1.09rem + 0.18vw), 1.25rem);
-  --step-1: clamp(1.35rem, calc(1.29rem + 0.30vw), 1.56rem);
+  --step-1: clamp(1.35rem, calc(1.29rem + 0.3vw), 1.56rem);
   --step-2: clamp(1.62rem, calc(1.52rem + 0.48vw), 1.95rem);
-  --step-3: clamp(1.94rem, calc(1.80rem + 0.71vw), 2.44rem);
+  --step-3: clamp(1.94rem, calc(1.8rem + 0.71vw), 2.44rem);
   --step-4: clamp(2.33rem, calc(2.13rem + 1.03vw), 3.05rem);
-  --step-5: clamp(2.80rem, calc(2.51rem + 1.45vw), 3.82rem);
+  --step-5: clamp(2.8rem, calc(2.51rem + 1.45vw), 3.82rem);
   --step-6: clamp(3.36rem, calc(2.96rem + 2.01vw), 4.77rem);
 }

@@ -1,0 +1,5 @@
+design/
+.git
+.eslintrc.json
+.babelrc
+dist/
