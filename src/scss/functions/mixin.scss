@@ -33,7 +33,12 @@
 }
 
 
-
+@mixin flex($justify: null, $align: null, $direction: row) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
 
 
 

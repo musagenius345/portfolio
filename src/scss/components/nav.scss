@@ -1,0 +1,11 @@
+@use '../functions' as *;
+
+.nav-list{
+  @include flex($justify:space-evenly, $align: center);
+  gap: 1em;
+  
+}
+
+nav{
+  @include flex($justify:space-between);
+}
