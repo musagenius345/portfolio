@@ -5,12 +5,13 @@
   "main": "index.js",
   "scripts": {
     "start": "concurrently \"npm:watch-*\" ",
-    "watch-sass": "sass src/scss/main.scss dist/css/style.css -w  --no-source-map",
+    "css": "concurrently \"npm:css-*\"",
+    "css-sass": "sass src/scss/main.scss dist/css/main.css -w  --no-source-map",
+    "css-postcss": "postcss src/scss/main.scss -o dist/css/main.css --watch",
     "watch-live": "live-server",
-    "js-eslint": "eslint src/js/*.js --fix",
-    "css-stylelint": "stylelint src/scss/*.scss",
-    "watch-prettier": "onchange \"**/*\" -- prettier --write --ignore-unknown {{changed}}",
-    "postcss": "postcss dist/css/style.css -o dist/css/main.css"
+    "lint-stylelint": "onchange stylelint src/scss/*.scss",
+    "lint-eslint": "onchange eslint src/js/*.js",
+    "format-prettier": "onchange \"**/*\" -- prettier --write --ignore-unknown {{changed}}"
   },
   "repository": {
     "type": "git",
@@ -20,14 +21,13 @@
   "author": "Musa Blackfrost",
   "license": "ISC",
   "devDependencies": {
-    "@babel/cli": "^7.21.0",
-    "@babel/core": "^7.21.4",
-    "@babel/plugin-transform-runtime": "^7.21.4",
-    "@babel/polyfill": "^7.12.1",
     "autoprefixer": "^10.4.14",
-    "postcss": "^8.4.21",
-    "sass": "^1.61.0",
-    "sass-loader": "^13.2.2"
+    "postcss": "^7.0.39",
+    "postcss-font-magician": "^3.0.0",
+    "postcss-import": "^15.1.0",
+    "postcss-preset-env": "^7.8.3",
+    "postcss-url": "^10.1.3",
+    "precss": "^4.0.0"
   },
   "stylelint": {
     "extends": "stylelint-config-standard",

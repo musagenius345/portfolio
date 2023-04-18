@@ -2,4 +2,5 @@ design/
 .git
 .eslintrc.json
 .babelrc
+node_modules
 dist/
