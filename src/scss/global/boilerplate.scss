@@ -1,3 +1,9 @@
 @use "variables" as *;
 @use "colors" as *;
 
+
+
+body{
+  background-color: var(--clr-bg);
+  color: var(--clr-txt);
+}

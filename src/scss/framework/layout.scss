@@ -1,0 +1,13 @@
+.container {
+  position: relative;
+  width: 100%;
+  margin: 0 var(--grid-gutter);
+  max-width: var(--grid-max-width);
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.wrapper{
+  display: grid;
+  place-content: center;
+}

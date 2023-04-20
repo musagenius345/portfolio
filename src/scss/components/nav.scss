@@ -1,11 +1,34 @@
 @use '../functions' as *;
+@use '../global'as *;
 
 .nav-list{
-  @include flex($justify:space-evenly, $align: center);
+  @include flex($justify:space-evenly);
   gap: 1em;
+  text-align: center;
+  max-width: 100%;
+  padding-block-start: 1em;
   
 }
 
 nav{
+  background-color: var(--sundance-200);
+  margin: 0;
+  padding-top: 1rem;
+  width: 100%;
+  /* margin-block: 1.3rem; */
   @include flex($justify:space-between);
+  
+  li{
+    a{
+      color: var(--nav-links);
+    }
+  }
+  
+  .logo{
+    /* margin-inline-start: .5rem; */
+    h2{
+      font-family: 'Mulish-Regular', sans-serif;
+      
+    }
+  }
 }

@@ -1,0 +1,19 @@
+.palette{
+  flex-direction: column;
+  max-width: 100%;
+  gap: .5em;
+  
+  &-item{
+    max-width: 100%;
+    height: 50px;
+    text-align: center;
+    
+  }
+  &__black{background-color: var(--black-700);}
+  &__sundance{background-color: var(--sundance-700);}
+  &__sea-pink{background-color: var(--sea-pink-700);}
+  &__raffia{background-color: var(--raffia-700);}
+  &__casablanca{background-color: var(--casablanca-700);}
+  &__firefly{background-color: var(--firefly-100);}
+  
+}
