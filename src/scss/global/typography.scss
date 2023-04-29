@@ -10,8 +10,8 @@ h3,
 h4,
 h5,
 h6 {
-  margin-top: 0;
-  margin-bottom: 2rem;
+  margin-block-start: 0;
+  margin-block-end: 2rem;
   font-weight: 300;
 }
 @at-root :root{

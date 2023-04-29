@@ -1,0 +1,22 @@
+<svg viewBox="10 10 140 0" xmlns="http://www.w3.org/2000/svg"
+  style="
+    stroke:0077FF; 
+    stroke-width:3px; 
+    fill:none; 
+    stroke-dasharray:440; 
+    stroke-dashoffset:440; 
+    stroke:url(#gradient);
+  "
+  >
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0077FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00BFFF;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <circle cx="80" cy="80" r="70" stroke-linecap="round"/>
+</svg>
+<!--optimum viewBox min-x = cx - r
+min-y = cy - r
+width = 2r
+height = 2r  -->

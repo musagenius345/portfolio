@@ -1,4 +1,8 @@
+@use 'sass:math';
+
 @charset "UTF-8";
 
-
+@function rem($pixel, $context: 16){
+  @return ((math.div($pixel, $context)) * 1rem);
+}
 

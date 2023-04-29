@@ -1,0 +1,81 @@
+@use '../functions' as *;
+
+
+.color-picker {
+  > fieldset{
+    border: 0;
+    display: flex;
+    gap: 2rem;
+    width: fit-content;
+    padding: 1rem 3rem;
+    margin-inline: auto;
+    border-radius: 0 0 1rem 1rem;
+    background-color:var(--radio-color);
+  }
+  input[type="radio"]{
+    appearance:none;
+    width: 1.4rem;
+    height: 1.4rem;
+    border-radius: 50%;
+    
+    outline: 3px solid var(--radio-color, currentColor);
+    outline-offset: 3px;
+    
+  &#black {--radio-color: var(--black-900);}
+  &#sundance {--radio-color: var(--sundance-900);}
+  &#raffia {--radio-color: var(--raffia-900);}
+  &#casablanca {--radio-color: var(--casablanca-900);}
+  &#seapink {--radio-color: var(--sea-pink-900);}
+  &#firefly{--radio-color: var(--firefly-900);}
+  &:checked{
+    background-color: var(--radio-color);
+    
+  }
+  }
+}
+
+:root{
+  &:has(#black:checked){
+    --clr-primary: var(--black-50);
+    --clr-secondary: var(--black-400);
+    --clr-accent: var(--black-200);
+    --clr-dark: var(--black-900);
+    --clr-hover: var(--black-300);
+  }
+  &:has(#sundance:checked){
+    --clr-primary: var(--sundance-50);
+    --clr-secondary: var(--sundance-400);
+    --clr-accent: var(--sundance-200);
+    --clr-dark: var(--sundance-900);
+    --clr-hover: var(--sundance-300);
+  }
+  &:has(#firefly:checked){
+    --clr-primary: var(--firefly-50);
+    --clr-secondary: var(--firefly-400);
+    --clr-accent: var(--firefly-200);
+    --clr-dark: var(--firefly-900);
+    --clr-hover: var(--firefly-300);
+  }
+  &:has(#casablanca:checked){
+    --clr-primary: var(--casablanca-50);
+    --clr-secondary: var(--casablanca-400);
+    --clr-accent: var(--casablanca-200);
+    --clr-dark: var(--casablanca-900);
+    --clr-hover: var(--casablanca-300);
+  }
+  &:has(#raffia:checked){
+    --clr-primary: var(--raffia-50);
+    --clr-secondary: var(--raffia-400);
+    --clr-accent: var(--raffia-200);
+    --clr-dark: var(--raffia-900);
+    --clr-hover: var(--raffia-300);
+  }
+  &:has(#seapink:checked){
+    --clr-primary: var(--sea-pink-50);
+    --clr-secondary: var(--sea-pink-400);
+    --clr-accent: var(--sea-pink-200);
+    --clr-dark: var(--sea-pink-900);
+    --clr-hover: var(--sea-pink-300);
+  }
+  
+}

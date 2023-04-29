@@ -8,7 +8,7 @@ input[type="button"] {
   display: inline-block;
   height: 38px;
   padding: 0 30px;
-  color: var(--btn-clr);
+  color: var(--clr-dark);
   text-align: center;
   /* font-size: 11px; */
   font-weight: 600;
@@ -17,7 +17,7 @@ input[type="button"] {
   text-transform: uppercase;
   text-decoration: none;
   white-space: nowrap;
-  background-color: var(--btn-bg);
+  background-color: var(--cl-primary);
   border-radius: 4px;
   border: 1px solid var(--clr-accent);
   cursor: pointer;
@@ -34,9 +34,9 @@ button:focus,
 input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
-  color: var(--btn-clr-hov);
-  border-color: var(--btn--border-hov-clr);
-  outline: var(--btn-outline-clr);
+  color: var(--clr-hover);
+  border-color: var(--clr-hover);
+  outline: var(--clr-hover);
 }
 
 .button.button-primary,
@@ -44,9 +44,9 @@ button.button-primary,
 input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
-  color: var(--btn-clr);
-  border-color: var(--btn-border-clr);
-  outline: var(--btn-outline-clr);
+  color: var(--clr-dark);
+  border-color: var(--clr-dark);
+  outline: var(--clr-dark);
 }
 
 .button.button-primary:hover,
@@ -59,9 +59,9 @@ button.button-primary:focus,
 input[type="submit"].button-primary:focus,
 input[type="reset"].button-primary:focus,
 input[type="button"].button-primary:focus {
-  color: var(--btn-clr-hov);
-  border-color: var(--btn--border-hov-clr);
-  outline: var(--btn-outline-clr);
+  color: var(--clr-hover);
+  border-color: var(--clr-hover);
+  outline: var(--clr-hover);
 }
 .btn {
   
