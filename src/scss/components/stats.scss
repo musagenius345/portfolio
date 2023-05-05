@@ -1,0 +1,33 @@
+.stats {
+
+
+  h4 {
+    /* line-height: 4; */
+
+    font-size: var(--step-5);
+    font-family: 'Outfit-Medium', sans-serif;
+    text-transform: uppercase;
+
+    /* color: var(--golden-harvest-800); */
+  }
+
+  &__tab {
+    margin-block-end: 3.8rem;
+    padding-block: 3.1rem;
+    padding-inline-start: 1.1rem;
+
+    background-color: var(--iron-maiden-200);
+
+    border-radius: 1rem;
+    outline: .3rem solid var(--clr-accent);
+  }
+
+
+  &__info {
+    font-size: var(--step-5);
+    margin-inline-end: 1.1rem;
+    border-bottom: 0.4rem solid var(--shadow-purple-950);
+    color: var(--golden-harvest-950);
+  }
+
+}

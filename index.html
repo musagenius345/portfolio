@@ -11,9 +11,11 @@
 
 <body>
   <nav class="flex">
-    <div class="logo">
-      <h2 role="title">blackfrost</h2>
+    <div class="logo__container">
+      <!-- <h2 role="title">blackfrost</h2> -->
+      <img src="assets/img/default-monochrome.svg" alt="Logo" class="logo">
     </div>
+    <div class="menu"><img src="assets/img/menu.svg" alt=""></div>
     <ul class="flex nav-list">
       <li><a href="#hero" aria-label="Home section">Home</a></li>
       <li>
@@ -24,35 +26,9 @@
       <li><a href="#blog" aria-label="Blog section">Blog</a></li>
     </ul>
   </nav>
-  <form action="" class="color-picker">
-    <fieldset>
-      <legend class="visually-hidden">Pick a color scheme</legend>
-      <label for="theme" class="visually-hidden">Black</label>
-      <input type="radio" name="theme" id="black" checked>
-      <label for="theme" class="visually-hidden">Sundance</label>
-      <input type="radio" name="theme" id="sundance">
-      <label for="theme" class="visually-hidden">Sea-pink</label>
-      <input type="radio" name="theme" id="seapink">
-      <label for="theme" class="visually-hidden">Raffia</label>
-      <input type="radio" name="theme" id="raffia">
-      <label for="theme" class="visually-hidden">Casablanca</label>
-      <input type="radio" name="theme" id="casablanca">
-      <label for="theme" class="visually-hidden">Firef</label>
-      <input type="radio" name="theme" id="firefly">
-    </fieldset>
-  </form>
 
   <div class="u-container">
     <header class="hero u-grid" id="hero">
-
-      <div class="palette flex">
-        <div class="palette-item palette__black">black</div>
-        <div class="palette-item palette__sundance">sundance</div>
-        <div class="palette-item palette__sea-pink">sea-pink - accent</div>
-        <div class="palette-item palette__raffia">raffia</div>
-        <div class="palette-item palette__casablanca">casablanca</div>
-        <div class="palette-item palette__firefly">firefly</div>
-      </div>
 
 
       <div class="bio">
@@ -72,6 +48,26 @@
         <p><strong>Phone:</strong> +1 (555) 123-4567</p>
         <a href="/assets/docs/cv.pdf" download><button>Download CV</button></a>
       </div>
+
+
+      <section class="stats">
+        <div class="stats__tab">
+          <h4><sup class="stats__info">24</sup>HOURS</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat amet eaque fuga voluptas eos blanditiis atque.</p>
+        </div>
+        <div class="stats__tab">
+          <h4><sup class="stats__info">365</sup>DAYS</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat amet eaque fuga voluptas eos blanditiis atque.</p>
+        </div>
+        <div class="stats__tab">
+          <h4><sup class="stats__info">52</sup>WEEKS</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat amet eaque fuga voluptas eos blanditiis atque.</p>
+        </div>
+        <div class="stats__tab">
+          <h4><sup class="stats__info">12</sup>months</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat amet eaque fuga voluptas eos blanditiis atque.</p>
+        </div>
+      </section>
 
 
     </article>
@@ -108,143 +104,46 @@
     </div>
 
 
-    <section class="skills-container">
-      <h2>My Skills</h2>
-      <div class="skill">
-        <div class="skill__box">
-          <div class="outer">
-            <div class="inner">
-              <div class="progress-percent">90%</div>
-            </div>
-          </div>
-          <h3>HTML</h3>
-        </div>
+    <section class="skill__section">
+      <h2>Skills</h2>
+      <div class="skill__container">
+        <h4 class="skill">HTML</h4>
+        <p class="skill__percentage">30%</p>
       </div>
-      <div class="skill">
-        <div class="skill__box">
-          <div class="outer">
-            <div class="inner">
-              <div class="progress-percent">29%</div>
-            </div>
-          </div>
-          <h3>JavaScript</h3>
-        </div>
+      <div class="skill__container">
+        <h4 class="skill">CSS</h4>
+        <p class="skill__percentage">40%</p>
       </div>
-      <div class="skill">
-        <div class="skill__box">
-          <div class="outer">
-            <div class="inner">
-              <div class="progress-percent">80%</div>
-            </div>
-          </div>
-          <h3>CSS</h3>
-        </div>
+      <div class="skill__container">
+        <h4 class="skill">JavaScript</h4>
+        <p class="skill__percentage">10%</p>
       </div>
-      <div class="skill">
-        <div class="skill__box">
-          <div class="outer">
-            <div class="inner">
-              <div class="progress-percent">70%</div>
-            </div>
-          </div>
-          <h3>Sass</h3>
-        </div>
+      <div class="skill__container">
+        <h4 class="skill">Sass</h4>
+        <p class="skill__percentage"></p>
       </div>
-      <div class="skill">
-        <div class="skill__box">
-          <div class="outer">
-            <div class="inner">
-              <div class="progress-percent">5%</div>
-            </div>
-          </div>
-          <h3>Node.js</h3>
-        </div>
+      <div class="skill__container">
+        <h4 class="skill">Bootstrap</h4>
+        <p class="skill__percentage">20%</p>
       </div>
-      <div class="skill">
-        <div class="skill__box">
-          <div class="outer">
-            <div class="inner">
-              <div class="progress-percent">2%</div>
-            </div>
-          </div>
-          <h3>React</h3>
-        </div>
+      <div class="skill__container">
+        <h4 class="skill">React</h4>
+        <p class="skill__percentage">55%</p>
       </div>
-      <div class="skill">
-        <div class="skill__box">
-          <div class="outer">
-            <div class="inner">
-              <div class="progress-percent">5%</div>
-            </div>
-          </div>
-          <h3>Python</h3>
-        </div>
+      <div class="skill__container">
+        <h4 class="skill">Svelte</h4>
+        <p class="skill__percentage">70%</p>
       </div>
-      <div class="skill">
-        <div class="skill__box">
-          <div class="outer">
-            <div class="inner">
-              <div class="progress-percent">30%</div>
-            </div>
-          </div>
-          <h3>TypeScript</h3>
-        </div>
+      <div class="skill__container">
+        <h4 class="skill">Python</h4>
+        <p class="skill__percentage">86%</p>
       </div>
-      <div class="skill">
-        <div class="skill__box">
-          <div class="outer">
-            <div class="inner">
-              <img src="/portfolio/assets/svg/loading.svg" alt="assets/svg/loading.svg">
-              <div class="progress-percent">20%</div>
-            </div>
-          </div>
-          <h3>PostCSS</h3>
-        </div>
-      </div>
-
     </section>
 
 
-
-
-
-
-
-    <article class="projects u-grid" id="projects">
-
-      <div class="github__Bonsai">
-        <img src="./assets/img/bonsai.png" alt="#">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni consequatur animi ab tenetur illo facere asperiores excepturi. Nulla esse, soluta? Omnis accusamus minus esse, iusto voluptate ratione aspernatur laudantium eveniet?</p>
-      </div>
-
-      <div class="github__Sass">
-        <img src="./assets/icons/sass.svg" alt="#">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni consequatur animi ab tenetur illo facere asperiores excepturi. Nulla esse, soluta? Omnis accusamus minus esse, iusto voluptate ratione aspernatur laudantium eveniet?</p>
-
-      </div>
-
-      <div class="github__QRComponent">
-        <img src="./assets/img/qrcode.jpg" alt="#">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni consequatur animi ab tenetur illo facere asperiores excepturi. Nulla esse, soluta? Omnis accusamus minus esse, iusto voluptate ratione aspernatur laudantium eveniet?</p>
-
-      </div>
-
-      <div class="github__astronvim">
-        <img src="#" alt="#">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni consequatur animi ab tenetur illo facere asperiores excepturi. Nulla esse, soluta? Omnis accusamus minus esse, iusto voluptate ratione aspernatur laudantium eveniet?</p>
-
-      </div>
-
-      <div class="github__viteTemplate">
-        <img src="./assets/icons/vite.svg" alt="#">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni consequatur animi ab tenetur illo facere asperiores excepturi. Nulla esse, soluta? Omnis accusamus minus esse, iusto voluptate ratione aspernatur laudantium eveniet?</p>
-
-      </div>
-    </article>
-
-    <article id="contact" class="contact">
-
-    </article>
+    <section id="contact" class="contact">
+      <h2>Get in Touch</h2>
+          </section>
 
 
     <article id="blog" class="blog">

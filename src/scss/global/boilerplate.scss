@@ -2,8 +2,23 @@
 @use "colors" as *;
 
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  max-width: 100%;
+  
+} 
 
 body{
-  background-color: var(--clr-primary);
-  color: var(--clr-dark);
+  background-color: var(--clr-bg);
+  color: var(--clr-txt);
 }

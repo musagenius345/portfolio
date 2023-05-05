@@ -1,0 +1,37 @@
+
+
+
+.skil{
+
+  
+}
+
+
+.skill {
+  width: rem(260);
+  height: 160px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.3em;
+
+  position: relative;
+  
+  &__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-direction: row;
+    h4{
+      font-family: 'Mulish-Medium', sans-serif;
+      
+    }
+  }
+  
+}
+
+
+
+

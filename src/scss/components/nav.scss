@@ -1,34 +1,62 @@
 @use '../functions' as *;
-@use '../global'as *;
+@use '../global' as *;
 
-.nav-list{
-  @include flex($justify:space-evenly);
-  gap: 1em;
-  text-align: center;
-  max-width: 100%;
-  padding-block-start: 1em;
+.nav-list {
+  display: none;
+}
+
+.menu {
+  margin-inline-end: 1.4rem;
+  display: grid;
+  place-items: center;
+  
+  &[src]{
+    
+  }
   
 }
 
-nav{
-  background-color: var(--clr-accent);
+@media (min-width: 55rem) {
+  .nav-list {
+    @include flex($justify: space-evenly);
+    gap: 1em;
+    text-align: center;
+    max-width: 100%;
+    padding-block-start: 1em;
+
+  }
+
+  .menu {
+    display: none;
+  }
+}
+
+nav {
+  /* position: relative; */
+  background-color: var(--clr-navbar);
   margin: 0;
   padding-top: 1rem;
-  width: 100%;
+  max-width: 100%;
   /* margin-block: 1.3rem; */
-  @include flex($justify:space-between);
-  
-  li{
-    a{
-      color: var(--clr-dark);
+  @include flex($justify: space-between);
+  gap: 3rem;
+
+  li {
+    a {
+      color: var(--clr-txt);
+      font-size: var(--step-1);
     }
   }
-  
-  .logo{
-    /* margin-inline-start: .5rem; */
-    h2{
-      font-family: 'Mulish-Regular', sans-serif;
-      
-    }
+
+
+}
+
+.logo {
+  margin-inline-start: 1rem;
+  height: 4.3rem;
+
+  &__container {
+    margin-block-end: 1.4rem;
+    text-align: center;
   }
 }

@@ -1,17 +1,16 @@
 .projects {
   display: flex;
-  flex-direction: row;
-  
+  flex-direction: column;
+  gap: .4rem;
+
   img {
-    width: 120px;
-    height: 180px;
+    border-radius: 20px;
     outline: 3px green solid;
     /* aspect-ratio: 4 / 3; */
     /* object-fit: cover; */
     overflow-y: hidden;
-    .github__QRComponent{
-      object-fit: contain;
-    }
-    
+
+
+
   }
 }
