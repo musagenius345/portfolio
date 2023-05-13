@@ -16,3 +16,14 @@
 
 
 
+@property --a {
+  initial-value: 0deg;
+  inherits: false;
+  syntax: '<angle>';
+}
+
+@property --h {
+  initial-value: 0;
+  inherits: false;
+  syntax: '<number>';
+}

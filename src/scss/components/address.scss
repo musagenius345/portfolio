@@ -1,0 +1,24 @@
+:has(address) {
+  font-family: 'Outfit-Regular', sans-serif;
+
+
+}
+
+.address {
+  font-style: normal;
+  
+  margin-block: 4rem;
+     
+  p{
+    /* font-size: var(--step-); */
+    font-weight: 600;
+    margin-block: .3rem;
+    line-height: 1.2;
+    /* font-stretch: ultra-expanded; */
+  }
+  a {
+    color: var(--nav-links);
+    font-size: var(--step-2);
+  }
+  
+}

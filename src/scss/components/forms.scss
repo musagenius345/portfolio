@@ -10,8 +10,8 @@ select {
   height: 38px;
   padding: 6px 10px;
   /* The 6px vertically centers text on FF, ignored by Webkit */
-  background-color: #fff;
-  border: 1px solid #d1d1d1;
+  background-color: var(--field-bg);
+  border: 1px solid var(--btn-border-clr);
   border-radius: 4px;
   box-shadow: none;
   box-sizing: border-box;
@@ -32,7 +32,7 @@ textarea {
 }
 
 textarea {
-  min-height: 65px;
+  min-height: 8px;
   padding-top: 6px;
   padding-bottom: 6px;
 }
@@ -46,7 +46,7 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 textarea:focus,
 select:focus {
-  border: 1px solid #33c3f0;
+  border: 1px solid var(--btn-border-hov-clr);
   outline: 0;
 }
 
@@ -67,8 +67,72 @@ input[type="radio"] {
   display: inline;
 }
 
-label > .label-body {
+label>.label-body {
   display: inline-block;
   margin-left: 0.5rem;
   font-weight: normal;
 }
+
+
+
+form>* {
+  font: inherit;
+}
+
+#textarea {
+  min-height: 18rem;
+  min-width: 32rem;
+}
+
+.contact {
+
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+
+
+
+    fieldset {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+  }
+
+
+}
+
+
+.placeholder {
+  color: var(--shadow-purple-400);
+}
+
+.terms {
+
+
+  &__wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    gap: 1rem;
+  }
+
+  &__txt, &__[type="checkbox"] {
+  line-height: 1.7;
+    /* margin-inline-start: .5em */
+  }
+}
+
+/* @media (min-width: 1000px){
+  .contact__wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+} */

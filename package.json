@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "vite": "vite",
+    "build": "vite build", 
+    "preview": "vite preview",
     "start": "concurrently \"npm:watch-*\" ",
     "css": "concurrently \"npm:css-*\"",
     "css-sass": "sass src/scss/main.scss dist/css/main.css -w  --no-source-map",

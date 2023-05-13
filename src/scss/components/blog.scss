@@ -1,0 +1,10 @@
+@use '../functions' as *;
+
+.blog{
+  @include flex(space-between, center, column);
+  gap: 1.8rem;
+  article{
+    font-size: var(--step-3);
+    font-family: 'SourceSansPro-Regular', sans-serif;
+  }
+}

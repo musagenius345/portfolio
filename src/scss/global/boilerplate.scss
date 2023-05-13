@@ -15,10 +15,31 @@ html {
 body {
   font-size: 1.6rem;
   max-width: 100%;
-  
-} 
 
-body{
+}
+
+body {
   background-color: var(--clr-bg);
   color: var(--clr-txt);
+}
+
+a {
+
+  color: var(--nav-links);
+  
+  
+  &:hover,
+  &:visited,
+  &:focus {
+    color: var(--shadow-purple-800);
+  }
+}
+
+
+
+
+@supports (a:any-links) {
+  a:any-links {
+    color: var(--shadow-purple-800);
+  }
 }
