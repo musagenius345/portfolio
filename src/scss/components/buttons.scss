@@ -64,5 +64,14 @@ input[type="button"].button-primary:focus {
   outline: var(--clr-hover);
 }
 .btn {
+  transition: transform 300ms ease-in-out;
   
+}
+
+.scale{
+  transform: scaleY(3rem);
+  -o-transform: scaleY(3rem);
+  -moz-transform: scaleY(3rem);
+  -webkit-transform: scaleY(3rem);
+  background-color: yellow;
 }

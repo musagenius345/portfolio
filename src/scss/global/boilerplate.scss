@@ -16,6 +16,7 @@ body {
   font-size: 1.6rem;
   max-width: 100%;
 
+
 }
 
 body {
@@ -40,6 +41,13 @@ a {
 
 @supports (a:any-links) {
   a:any-links {
-    color: var(--shadow-purple-800);
+    color: var(--accent-clr);
   }
+}
+
+.icon{
+  color: currentColor;
+  display: inline;
+  width: 21px;
+  height: 24px;
 }

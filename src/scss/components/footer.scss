@@ -1,0 +1,15 @@
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  background-color: var(--shadow-purple-700);
+
+  p {
+    margin-inline: 0;
+    margin-block-start: 1.5rem;
+    color: var(--golden-harvest-400);
+    font-size: var(--step-0);
+
+  }
+}

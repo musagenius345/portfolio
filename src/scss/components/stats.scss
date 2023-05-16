@@ -14,13 +14,12 @@
   &__tab {
     margin-block-end: 3.8rem;
     padding-block: 3.1rem;
-    padding-inline-start: 1.1rem;
-
+    padding-inline: min(1.3rem, calc(2rem - 2vw));
     background-color: var(--field-bg);
 
-    /* border-radius: 1rem; */
-    border: 4px solid;
-    /* outline: .3rem solid var(--clr-accent); */
+    border-radius: 20px;
+    /* border: 3px solid var(--shadow-purple-600); */
+    outline: .3rem solid var(--shadow-purple-500);
   }
 
 
